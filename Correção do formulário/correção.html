@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+        function cadastrar(){
+            const nome = document.getElementById ('nome').value
+            resultado.innerHTML = "resultado"
+            const idade = document.getElementById ('idade').value
+            const email = document.getElementById ('email').value
+            console.log(nome)
+            console.log(idade)
+            console.log(email)
+            resultado.innerHTML = nome
+            resultado.innerHTML = idade
+            resultado.innerHTML = email
+        }
+    </script>
+<body>
+    Nome <input type="text" id="nome"/>
+    Idade <input type="text" id="idade"/>
+    email <input type="text" id="email"/>
+
+
+    <input type="button" onclick="cadastrar" value = "enviar">
+    Seu nome é: <span id="resultado"></span>
+    
+</body>
+</html>
